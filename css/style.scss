@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+$smallFont: .9rem;
+$smallerFont: .8rem;
+$grayColor: #6a6a6e;
+
+body{
+    background-color: #e6efee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 40px auto;
+    // padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 5px 0px rgb(197, 197, 197);
+    padding-bottom: 40px;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    padding: 20px;
+}
+
+.nav-items{
+    display: flex;
+    cursor: pointer;
+}
+.nav-item{
+    &:hover{
+    background-color: #ecf3fe;
+    }
+    border: 1px solid #fff;
+    list-style: none;
+    padding: 8px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: $smallFont;
+    color: $grayColor;
+    font-weight: 600;
+}
+.images{
+    border-radius: 30%;
+    height: 40px;
+    width: 40px;
+}
+.right-div{
+    display: flex;
+}
+.icon-txt{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.la-angle-down{
+    padding-left: 10px;
+}
+.txt{
+    font-size: $smallFont;
+    color:$grayColor;
+    font-weight: 600;
+}
+
+//END Of NAV
+
+.users-div{
+    margin: 40px 40px;
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: $smallerFont ;
+        color: $grayColor;
+        font-weight: 600;
+    }
+}
+
+.btn{
+    padding: 6px 15px;
+    margin-right: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #123b81;
+    color: rgb(216, 216, 216);
+}
+.invite-users{
+    display: flex;
+    align-items: center;
+    i{
+        font-size: 25px;
+        padding-right: 10px;
+    }
+    p{
+        font-size: $smallerFont;
+        font-weight: 600;
+    }
+}
+.middle-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//END OF MIDDLE SECTION
+
+.input-flex{
+    width: 80% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(236, 236, 236); ;
+    margin: 0px 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    i{
+        font-size: 25px;
+        padding-right: 10px;
+        color: $grayColor;
+    }
+}
+.icon-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    input{
+        width: 100%;
+        padding: 13px;
+        padding-left: 0px;
+        &::placeholder{
+            font-size: $smallFont;
+        }
+    }
+}
+input{
+    border: none;
+    &:focus{
+        outline: none;
+        border-style: none;
+    }
+}
+
+//INPUT END
+
+.users{
+
+}
+.each-user{
+    img{
+        height: 30px;
+        width: 30px;
+    }
+    overflow-x: auto;
+    font-size: $smallFont;
+    margin: 20px 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+
+}
+table{
+    width: 100%;
+    font-size: $smallerFont;
+    color: $grayColor;
+    font-weight: 600;
+}
+td{
+    padding: 10px;
+}
+
+tr{
+    &:hover{
+        background-color: #ecf3fe;
+    }
+}
+
+.table-btn{
+   
+    p{
+        line-height: 0;
+        font-size: $smallerFont;
+        font-weight: 600;
+        padding: 0 5px;
+    }
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #e4e9f5;
+}
+.name{
+    color: #202020;
+    padding-left: 15px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(13, 197, 13);
+}
+.img-name{
+    display: flex;
+    align-items: center;
+}
+//TABLE END...
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 40px;
+}
+.right-footer{
+    button{
+        border: 1px solid rgb(184, 182, 182);
+        padding: 8px;
+    }
+    display: flex;
+}
+.div1{
+    p {
+       padding-right: 5px; 
+    }
+    .la-angle-down{
+        padding-left: 0;
+    }
+    .table-btn{
+        padding: 8px;
+    }
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+.div2{
+    .btn-foot{
+        margin-left: 10px;
+}
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 500px) {
+     
+    .main-nav{
+        overflow-x: hidden;
+    }
+}
